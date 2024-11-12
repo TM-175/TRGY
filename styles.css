@@ -104,6 +104,7 @@ body {
     z-index: 1000;
     animation: float 10s ease-in-out infinite, horizontalMove 15s linear infinite;
     transition: transform 0.3s ease;
+    overflow-x: hidden;
 }
 
 /* Keyframe animation to make the meme float up and down */
