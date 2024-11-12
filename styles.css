@@ -156,18 +156,20 @@ body {
 }
 
 .landing h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     animation: fadeIn 1.5s ease;
 
     animation-name: coolColorThing;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    z-index: 1001;
 }
 
 .landing p {
     font-size: 1.5rem;
     margin-top: 20px;
     animation: fadeIn 2.5s ease;
+    z-index: 1001;
 }
 
 .cta-button {
@@ -175,10 +177,17 @@ body {
     padding: 10px 20px;
     background: #ffd700;
     color: #111;
+    border: 3px solid #ffd700;
     border-radius: 50px;
     font-weight: bold;
     animation: fadeIn 3.5s ease;
     transition: transform 0.3s;
+    z-index: 1001;
+
+    animation-name: buttonTest;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
 
 .cta-button:hover {
@@ -345,3 +354,9 @@ footer {
     50%   {color: #867726;}
     100%   {color: #ffd700;}
 }
+
+@keyframes buttonTest {
+    0%   {border-color: #ffd700;}
+    50%   {border-color: black;}
+    100%   {border-color: #ffd700;}
+  }
