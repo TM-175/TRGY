@@ -156,8 +156,12 @@ body {
 }
 
 .landing h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     animation: fadeIn 1.5s ease;
+
+    animation-name: coolColorThing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .landing p {
@@ -336,3 +340,8 @@ footer {
     to { opacity: 1; }
 }
 
+@keyframes coolColorThing {
+    0%   {color: #ffd700;}
+    50%   {color: #867726;}
+    100%   {color: #ffd700;}
+}
