@@ -7,12 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-// Randomize Floating Meme Animation Delay for Each Load
-document.querySelectorAll('.floating-meme').forEach(meme => {
-    meme.style.animationDelay = `${Math.random() * 5}s`;
-});
-
 // Glow effect on hover for roadmap milestones
 document.querySelectorAll('.milestone').forEach(milestone => {
     milestone.addEventListener('mouseover', () => {
@@ -31,5 +25,15 @@ window.addEventListener('scroll', () => {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
+    }
+});
+
+// rocket
+const rocket = document.querySelector('.rocket');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 1000){
+        const scrollY = window.scrollY - 1000;
+        const movement = scrollY * 0.7;
+        rocket.style.transform = `translateY(-${movement}px)`;
     }
 });
