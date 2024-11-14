@@ -37,3 +37,35 @@ window.addEventListener('scroll', () => {
         rocket.style.transform = `translateY(-${movement}px)`;
     }
 });
+
+async function requestAccount() {
+    if (window.ethereum) {
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+    } else {
+        alert('MetaMask is not installed');
+    }
+}
+
+async function interactWithContract() {
+    if (1 == 1) {
+        await requestAccount();
+
+        const contractAddress = 'contract-address';
+        const contractABI = [
+            // put abi later
+        ];
+
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+        const contract = new ethers.Contract(contractAddress, contractABI, signer);
+
+        try {
+            const transaction = await contract.function_name(); //solidity function name
+            await transaction.wait(); // Wait for the transaction to be mined
+            console.log('Transaction successful:', transaction);
+        } catch (error) {
+            console.error('Transaction failed:', error);
+        }
+    }
+}
+

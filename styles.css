@@ -393,30 +393,39 @@ footer {
 }
 
 /* Contract Holder */
-.contract {
+.supply {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contract-link {
+.supply-link {
     color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 15px;
     border-radius: 25px;
 }
 
-.contract-link h1 {
+.supply-link h1 {
     margin-top: 10px;
     color:#4efded;
     font-family: "Kanit", sans-serif;
 }
-.contract-link p {
+.supply-link p {
     margin-top: 5px;
     font-weight: bold;
     font-size: 15px;
 }
+
+.interact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 100px;
+}
+
 /* Mobile Responsive for Roadmap */
 @media (max-width: 768px) {
     .roadmap-container {
