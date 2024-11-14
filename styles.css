@@ -401,22 +401,21 @@ footer {
 }
 
 .contract-link {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 15px;
     border-radius: 25px;
-    background: #4efded;
-    border: 3px solid black;
-    box-shadow: 0px 0px 0px 2px white;
 }
 
 .contract-link h1 {
+    margin-top: 10px;
+    color:#4efded;
     font-family: "Kanit", sans-serif;
 }
 .contract-link p {
     margin-top: 5px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
 }
 /* Mobile Responsive for Roadmap */
 @media (max-width: 768px) {
