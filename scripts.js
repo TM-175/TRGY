@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Glow effect on hover for roadmap milestones
 document.querySelectorAll('.milestone').forEach(milestone => {
     milestone.addEventListener('mouseover', () => {
-        milestone.style.boxShadow = '0px 0px 15px 5px rgba(255, 215, 0, 0.6)';
+        milestone.style.boxShadow = '0px 0px 15px 5px rgba(78, 253, 257, 0.6)';
     });
     
     milestone.addEventListener('mouseleave', () => {
@@ -31,8 +31,8 @@ window.addEventListener('scroll', () => {
 // rocket
 const rocket = document.querySelector('.rocket');
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 1000){
-        const scrollY = window.scrollY - 1000;
+    if (window.scrollY > 800){
+        const scrollY = window.scrollY - 800;
         const movement = scrollY * 0.7;
         rocket.style.transform = `translateY(-${movement}px)`;
     }

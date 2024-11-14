@@ -219,7 +219,7 @@ body {
 .section {
     padding: 80px 20px;
     text-align: center;
-    color: #ffd700;
+    color: white;
     position: relative;
 }
 
@@ -257,11 +257,12 @@ body {
 
 .t-right button {
     text-decoration: underline;
+    font-size: 15px;
     margin-top: 25px;
     padding: 10px 20px;
-    background: #ffd700;
+    background: #ff5dd6;
     color: #111;
-    border: 3px solid #ffd700;
+    border: 3px solid #ce50ae;
     border-radius: 50px;
     font-weight: bold;
     animation: fadeIn 3.5s ease;
@@ -285,7 +286,7 @@ footer {
 /* Enhanced Roadmap Section */
 .roadmap {
     padding: 80px 20px;
-    color: #ffd700;
+    color: white;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -321,8 +322,9 @@ footer {
 }
 
 .milestone h3 {
+    margin-top: 35px;
     font-size: 1.4rem;
-    color: #ffd700;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -339,7 +341,7 @@ footer {
     left: 50%;
     width: 80%;
     height: 4px;
-    background: #ffd700;
+    background: #4efded;
     transform: translateX(-50%);
     z-index: -1;
 }
@@ -349,7 +351,7 @@ footer {
     position: absolute;
     width: 15px;
     height: 15px;
-    background: #ffd700;
+    background: #4efded;
     border-radius: 50%;
     left: 50%;
     top: 50%;
