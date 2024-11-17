@@ -1,0 +1,10 @@
+name: Example Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write    # Allows workflows to request OIDC tokens
+  pages: write       # Grants access to manage GitHub Pages
