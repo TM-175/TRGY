@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Kanit:wght@400;500&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.4/ethers.umd.min.js"></script>
 
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <header class="navbar">
@@ -20,10 +23,10 @@
                 <img src="img/logo.png" alt="TRGY Logo" />
                 <p>TRIANGLE</p>
             </div>
-            
+
             <!-- Navigation Links -->
             <nav>
-                
+
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
                     <li><a href="#tokenomics" style="color:#4efded;">Tokenomics</a></li>
@@ -35,8 +38,9 @@
     </header>
 
     <script src="scripts.js"></script>
-    
+
     <div class="interact">
+        <input type="text" id="address">
         <button onclick="interactWithContract();" id="interactButton">Change Redistribution Address</button>
     </div>
 
@@ -45,4 +49,5 @@
         <p>&copy; 2024 TRGY Coin. All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>
