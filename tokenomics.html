@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Kanit:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Kanit:wght@400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.4/ethers.umd.min.js"></script>
 
 </head>
 
-<body>
+<body style="height: 100%;">
     <!-- Navigation Bar -->
     <header class="navbar">
         <div class="navbar-container">
@@ -39,9 +38,11 @@
 
     <script src="scripts.js"></script>
 
-    <div class="interact">
-        <input type="text" id="address">
-        <button onclick="interactWithContract();" id="interactButton">Change Redistribution Address</button>
+    <div class="web3-holder">
+        <div class="web3">
+            <input type="text" id="address">
+            <button onclick="interactWithContract();" id="interactButton">Connect Wallet</button>
+        </div>
     </div>
 
     <!-- Footer -->

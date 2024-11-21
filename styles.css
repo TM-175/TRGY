@@ -418,12 +418,46 @@ footer {
     font-size: 15px;
 }
 
-.interact {
+.web3-holder {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    margin-top: 100px;
+    height: 100%;
+}
+.web3 {
+    padding: 30px;
+    background-color: #28263a;
+    box-shadow: 0px 3px 100px 0px rgba(78,253,237,0.2);
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.web3 input {
+    border-radius: 100px;
+    background-color: black;
+    outline: none;
+    border: none;
+    padding: 11px;
+    color: white;
+    text-align: right;
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+}
+
+.web3 button {
+    background-color: #4efded;
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    font-family: "Exo 2", serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.web3 button:hover {
+    background-color: #3ed4c8;
 }
 
 /* Mobile Responsive for Roadmap */
