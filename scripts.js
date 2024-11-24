@@ -73,3 +73,8 @@ async function interactWithContract() {
     return false;
 }
 
+function copyContract (){
+    let copyButton = document.getElementById('copy-pic')
+    copyButton.src = "img/check-mark.svg"
+    navigator.clipboard.writeText('0xaD1c397Ea47b21B2E355b57A2CfdAb9b7d14f94a')
+}
