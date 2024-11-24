@@ -193,11 +193,14 @@ body {
     color:#4efded;
 }
 
-.cta-button {
+/* Make the copy contract button */
+.contract {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 30px;
     padding: 10px 20px;
     background: #ff5dd6;
-    color: #111;
     border: 3px solid #ce50ae;
     border-radius: 50px;
     font-weight: bold;
@@ -211,8 +214,17 @@ body {
     animation-iteration-count: infinite;
 }
 
-.cta-button:hover {
+.contract:hover {
     transform: scale(1.1);
+}
+
+.contract a {
+    color: black;
+}
+
+.contract img {
+    height: 25px;
+    width: 25px;
 }
 
 /* Section Styling */
@@ -418,6 +430,7 @@ footer {
     font-size: 15px;
 }
 
+/* Tokenomics page */
 .web3-holder {
     display: flex;
     justify-content: center;
