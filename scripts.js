@@ -78,3 +78,21 @@ function copyContract (){
     copyButton.src = "img/check-mark.svg"
     navigator.clipboard.writeText('0xaD1c397Ea47b21B2E355b57A2CfdAb9b7d14f94a')
 }
+
+// Shorten contract copy button based on screen width
+function adjustLinkText() {
+    link = document.getElementById('copy-button')
+    const originalText = link.textContent.trim();
+    const thresholdWidth = 700;
+    if (window.innerWidth < thresholdWidth) {
+        const maxLength = 15; 
+        if (originalText.length > maxLength) {
+            link.textContent = originalText.slice(0, maxLength) + '...';
+        }
+    } else {
+        link.textContent = originalText;
+    }
+}
+// For ^^^^
+window.onload = adjustLinkText;
+window.onresize = adjustLinkText;
