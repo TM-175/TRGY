@@ -447,9 +447,22 @@ footer {
     flex-direction: column;
     gap: 10px;
 }
-.web3 input {
+.web3-input {
+    gap: 10px;
+    display: flex;
+    align-items: center;
     border-radius: 100px;
     background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+    text-align: right;
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+}
+
+.web3-input input {
+    background: none;
     outline: none;
     border: none;
     padding: 11px;
@@ -457,6 +470,12 @@ footer {
     text-align: right;
     font-family: "Varela Round", sans-serif;
     font-size: 20px;
+    width: 190px;
+}
+
+.web3-input img {
+    margin-left: 9px;
+    width: 30px;
 }
 
 .web3 button {
