@@ -306,8 +306,9 @@ footer {
     padding-right: 50px;
 }
 
-.socials-website img {
+.socials-media img {
     width: 35px;
+    margin-left: 8px;
 }
 
 .socials-website {
@@ -341,9 +342,15 @@ footer {
 }
 
 .socials-random a {
+    color: white;
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
     margin: 20px;
     font-size: 18px;
+}
+
+.socials-random a:hover {
+    color: #3ed4c8;
 }
 
 /* Enhanced Roadmap Section */
