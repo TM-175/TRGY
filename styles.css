@@ -289,10 +289,61 @@ body {
 
 /* Footer */
 footer {
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
     color: #ffffff;
-    text-align: center;
     font-size: 0.9rem;
+}
+
+/* Social Media */
+.socials {
+    padding: 30px;
+    display: flex; 
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.socials-website img {
+    width: 35px;
+}
+
+.socials-website {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.socials-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.socials-logo img {
+    width: 50px;
+}
+
+.socials-logo p {
+    font-family: "Exo 2", serif;
+}
+
+.socials-random {
+    display: flex;
+    gap: 30px;
+    text-align: right;
+}
+
+.socials-random a {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    font-size: 18px;
 }
 
 /* Enhanced Roadmap Section */
@@ -447,6 +498,8 @@ footer {
     flex-direction: column;
     gap: 10px;
 }
+
+/* Make the entire div look like an input box */
 .web3-input {
     gap: 10px;
     display: flex;
